@@ -1,0 +1,25 @@
+{%include 'header.html' %}
+{%include 'menu.html' %}
+{% load static %}
+
+<center>
+<table border="2">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>MOBILE</th>
+        <th>EMAIL</th>
+        
+    </tr>
+    {% for pdata in mydata %}
+    <tr>
+        <td>{{ pdata.id }}</td>
+        <td>{{ pdata.sname }}</td>
+        <td>{{ pdata.smobile }}</td>
+        <td>{{ pdata.semail }}</td>
+       
+    </tr>
+    {% endfor %}
+</table>
+</center>
+{%include 'footer.html' %}

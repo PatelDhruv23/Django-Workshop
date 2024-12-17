@@ -1,0 +1,24 @@
+{%include 'header.html' %}
+{%include 'menu.html' %}
+
+<form method="post" action="/processmsheet">
+
+    {% csrf_token %}
+
+    <center>
+        <h2>MARSHEET DATA ENTRY</h2>
+        JAVA : <input type="text" name="txt1">
+        <br><br>
+        PYTHON : <input type="text" name="txt2">
+        <br><br>
+
+        OS : <input type="text" name="txt3">
+        <br><br>
+
+        DSA : <input type="text" name="txt4">
+        <br><br>
+    
+    <input type='submit'>
+    </center>
+</form>
+{%include 'footer.html' %}
